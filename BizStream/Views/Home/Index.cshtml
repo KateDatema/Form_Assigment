@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="formContainer">
+    <h2>Contact Us Form</h2>
+
+
+    <form method="post" id="formInfo" enctype="multipart/form-data" asp-action="Index">
+
+
+        <label for="FirstName">First Name:</label><br />
+        <input type="text" id="FirstName" name="FirstName" required />
+        <br />
+        <br />
+        <label for="LastName">Last Name:</label><br />
+        <input type="text" id="LastName" name="LastName" />
+        <br />
+        <br />
+        <label for="Email">Email:</label><br />
+        <input type="email" id="Email" name="Email" required />
+        <br />
+        <br />
+        <label for="Message">Message:</label><br />
+        <textarea type="text" id="Message" name="Message" required /> </textarea>
+        <br />
+        <br />
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
